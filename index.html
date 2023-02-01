@@ -1,41 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Rock-Paper-Scissor</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <section class="game">
-        <div class="score">
-            <div class="player-score">
-                <h2>Player</h2>
-                <p>0</p>
-            </div>
-            <div class="computer-score">
-                <h2>Computer</h2>
-                <p>0</p>
-            </div>
+      <div class="score">
+        <div class="player-score">
+          <h2>Player</h2>
+          <p>0</p>
         </div>
-        <div class="intro">
-            <h1>Rock Paper Scissors</h1>
-            <button>Start</button>
+        <div class="computer-score">
+          <h2>Computer</h2>
+          <p>0</p>
         </div>
-        <div class="match fadeOut">
-            <h2 class="winner">Choose your weapon</h2>
-            <div class="hands">
-                <img class="player-hand" src="./asset/rock.png" alt="rock">
-                <img class="computer-hand" src="./asset/rock.png" alt="rock">
-            </div>
-            <div class="options">
-                <button class="rock">rock</button>
-                <button class="paper">paper</button>
-                <button class="scissors">scissors</button>
-            </div>
-
+      </div>
+      <div class="intro">
+        <h1>Rock Paper Scissors</h1>
+        <button onclick="startGame()">Start</button>
+      </div>
+      <div class="match fadeOut">
+        <h2 class="winner">Choose your weapon</h2>
+        <div class="hands">
+          <img class="player-hand" src="./asset/rock.png" alt="rock" />
+          <img class="computer-hand" src="./asset/rock.png" alt="rock" />
         </div>
+        <div class="options">
+          <button onclick="playMatch()"class="rock">rock</button>
+          <button onclick="playMatch()"class="paper">paper</button>
+          <button onclick="playMatch()"class="scissors">scissors</button>
+        </div>
+      </div>
     </section>
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>
