@@ -50,8 +50,8 @@ const game = () => {
   };
 
   const updateScore = () => {
-    const playerScore = document.querySelector(".player-score p");
-    const computerScore = document.querySelector(".computer-score p");
+    const playerScore = document.querySelector(".p1");
+    const computerScore = document.querySelector(".p2");
     playerScore.textContent = pScore;
     computerScore.textContent = cScore;
   };
@@ -111,6 +111,7 @@ const game = () => {
   //call all the inner functions
   startGame();
   playMatch();
+  
   
 };
 
