@@ -50,8 +50,8 @@ const game = () => {
   };
 
   const updateScore = () => {
-    const playerScore = document.querySelector(".p1");
-    const computerScore = document.querySelector(".p2");
+    let playerScore = document.querySelector(".player-hand");
+    let computerScore = document.querySelector(".computer-hand");
     playerScore.textContent = pScore;
     computerScore.textContent = cScore;
   };
